@@ -17,7 +17,7 @@ pipeline {
 
         stage('frontend unit test') {
           steps {
-            bat 'cd docker-frontend-backend-db && npm i && npm run build'
+            bat 'npm i && npm run build'
           }
         }
 
