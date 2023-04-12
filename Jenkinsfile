@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('log') {
           steps {
-            bat 'dir'
+            sh 'ls -la'
           }
         }
 
