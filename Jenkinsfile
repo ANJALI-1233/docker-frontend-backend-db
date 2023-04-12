@@ -17,7 +17,7 @@ pipeline {
 
         stage('frontend unit test') {
           steps {
-            sh 'cd /frontend && npm i && npm run build'
+            sh 'cd  && cd /var/lib/jenkins/workspace/ocker-frontend-backend-db_master/frontend && npm i && npm run build'
           }
         }
 
