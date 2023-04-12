@@ -17,7 +17,7 @@ pipeline {
 
         stage('frontend unit test') {
           steps {
-            bat 'npm i && npm run build'
+            sh 'npm i && npm run build'
           }
         }
 
