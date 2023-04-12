@@ -17,7 +17,7 @@ pipeline {
 
         stage('frontend unit test') {
           steps {
-            sh 'npm i && npm run build'
+            sh 'cd /ocker-frontend-backend-db_master/frontend && npm i && npm run build'
           }
         }
 
